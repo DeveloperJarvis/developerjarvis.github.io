@@ -14,3 +14,7 @@
     --card-background: #26243b;
 }
 
+#navigation-class {
+    background-color: red;
+    color: salmon;
+}
