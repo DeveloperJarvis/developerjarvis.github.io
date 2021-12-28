@@ -10,13 +10,35 @@
                 
             }
 
+            body {
+                margin: -0.1rem 0 0 0;
+                padding: 0;
+                background: linear-gradient(90deg, #D0CDCD, #999392, #595757, #32303F);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                height: fit-content;
+                }
+
+                @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
             .navlink {
                 color: #c9c9c9;
             }
 
             #SiteMessage{
-                color: #DDDCDC;
+                color: linear-gradient(90deg, #8E7E36;
             }
+
         </style>
     </head>
     <body>
