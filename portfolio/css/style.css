@@ -19,7 +19,7 @@
     color: salmon;
 }
 
-.background-main {
+div.background-main {
     margin: -0.1rem 0 0 0;
     padding: 0;
     background: linear-gradient(90deg, #D0CDCD, #999392, #595757, #32303F);
