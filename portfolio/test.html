@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My GitHub Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>GitHub Projects</h2>
+  <table id="repoTable">
+    <tr>
+      <th>Project Name</th>
+      <th>Created Date</th>
+      <th>Last Updated</th>
+      <th>Link</th>
+    </tr>
+  </table>
+
+  <script>
+    const repos = [
+      "DeveloperJarvis/HideInClearText",
+      "DeveloperJarvis/StringExtractor"
+    ];
+
+    const table = document.getElementById("repoTable");
+
+    repos.forEach(repo => {
+      fetch(`https://api.github.com/repos/${repo}`)
+        .then(response => response.json())
+        .then(data => {
+          const row = document.createElement("tr");
+
+          row.innerHTML = `
+            <td>${data.name}</td>
+            <td>${new Date(data.created_at).toLocaleDateString()}</td>
+            <td>${new Date(data.updated_at).toLocaleDateString()}</td>
+            <td><a href="${data.html_url}" target="_blank">${data.html_url}</a></td>
+          `;
+          table.appendChild(row);
+        })
+        .catch(err => console.error("Error fetching data for:", repo, err));
+    });
+  </script>
+</body>
+</html>
