@@ -1,6 +1,8 @@
 const repos = [
+    "DeveloperJarvis/bouncing_circle",
     "DeveloperJarvis/dns",
     "DeveloperJarvis/hide_in_clear_text",
+    "DeveloperJarvis/my_cat",
     "DeveloperJarvis/my_echo",
     "DeveloperJarvis/one_time_pad",
     "DeveloperJarvis/string_extractor"
@@ -8,7 +10,8 @@ const repos = [
 
 const table = document.getElementById("repoTable");
 
-let repoData = [];
+let repoData = [];      // Only valid (successful) Github responses
+let fallbackData = [];  // For failed fetches
 
 // Default sort settings -> sort by repo name ascending
 let currentSort = { column: "name", direction: 1 };
@@ -16,20 +19,31 @@ let currentSort = { column: "name", direction: 1 };
 // Fetch data repo metadata from Github API
 Promise.all(
     repos.map(r => fetch(`https://api.github.com/repos/${r}`)
-        .then(res => {
-            if (!res.ok) {
-                console.warn("Github API limit reached or missing repo: ", r);
-                return null;
-            }
-            return res.json();
-        }))
+        // .then(res => {
+        //     if (!res.ok) {
+        //         console.warn("Github API limit reached or missing repo: ", r);
+        //         return null;
+        //     }
+        //     return res.json();
+        // })
+        .then(res => res.ok ? res.json() : null)
         .catch(err => {
             console.error("Network error: ", r, err);
             return null;
         })
-).then(data => {
-    // Filter null entries if Github API failed
-    repoData = data.filter(x => x !== null);
+    )
+).then(results => {
+    repoData = [];      // Reset
+    fallbackData = [];  // Reset
+
+    results.forEach((repo, index) => {
+        if (repo) {
+            repoData.push(repo);
+        } else {
+            fallbackData.push(repos[index])
+        }
+    });
+
     renderTable(true);   // first load → instant fade in
 });
 
