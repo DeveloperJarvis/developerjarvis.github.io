@@ -3,57 +3,24 @@
     <head>
         <base href="https://developerjarvis.github.io/JSPortfolio/index.html">
         <title>My Github Site!</title>
-        <style>
-                       
-            body {
-                background-color: #000000;
-                background-image: linear-gradient(315deg, #000000 0%, #414141 78%); 
-            }
-                    
-            body {
-                margin: -0.1rem 0 0 0;
-                padding: 0;
-                background: linear-gradient(90deg, #D0CDCD, #999392, #595757, #32303F);
-                background-size: 400% 400%;
-                animation: gradient 10s ease infinite;
-                height: fit-content;
-                }   
-     
-                @keyframes gradient {
-                0% {
-                    background-position: 0% 50%;
-                }
-                50% {
-                    background-position: 100% 50%;
-                }
-                100% {
-                    background-position: 0% 50%;
-                }
-            }   
-
-            .navlink {
-                color: #c9c9c9;
-            }
-
-            #SiteMessage{
-                color: linear-gradieit(90deg, #8E7E36);
-            }
-
-        </style>
+        <style href="/static/style.css"></style>
     </head>
     
     <body>
         
         <!-- Add image or view -->
         
-        <li class="navlink">
-            <a 
-                href="/portfolio/portfolio.html" 
-                class="portfolio" 
-                id="portfolio"
-                >Portfolio</a
-            >
-        </li>
+        <ul>
+            <li class="navlink">
+                <a href="/portfolio/portfolio.html">Portfolio</a>
+            </li>
+            <li class="navlink">
+                <a href="/cssref/cssref.html" class="cssref">
+                    <img src="cssrefmain.jpg" alt="CSS Reference">
+                </a>
+            </li>
+        </ul>
+
         
         <!-- Set preview of CSS Reference Main image -->
         <!-- Fix size of image -->
