@@ -1,0 +1,76 @@
+/*
+* CSS for Projects Page 
+*/
+/* Base page layout*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #fafafa;
+    color: #222;
+}
+
+/* Table fade-in animation */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+table.fade-in {
+    opacity: 1;
+}
+
+/* Table: Header + Cell styling */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    text-align: left;
+}
+
+/* Table: Header styling */
+th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: background-color 0.18s ease;
+}
+
+/* Highlight active sorted column */
+th.active {
+    background-color: #e7f1ff;
+    font-weight: bold;
+}
+
+/* Sort arrow indicators */
+th.sort-asc::after {
+    content: " ▲";
+    font-size: 12px;
+    color: #444;
+}
+th.sort-desc::after {
+    content: " ▼";
+    font-size: 12px;
+    color: #444;
+}
+
+/* Hover highlight for table rows */
+tr:hover td {
+    background-color: #f9fbff;
+}
+
+/* Alternative row shading */
+table tr:nth-child(even) td {
+    background-color: #fcfcfc;
+}
+
+/* Link color */
+a {
+    color: #0078d7;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+a:hover {
+    color: #005bb5
+}
