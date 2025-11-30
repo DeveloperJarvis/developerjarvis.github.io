@@ -1,0 +1,116 @@
+[
+    {
+        "project": "bcalc",
+        "start_date": "11/19/2025",
+        "end_date": "11/20/2025",
+        "url": "https://github.com/DeveloperJarvis/bcalc"
+    },
+    {
+        "project": "bouncing_circle",
+        "start_date": "11/18/2025",
+        "end_date": "11/19/2025",
+        "url": "https://github.com/DeveloperJarvis/bouncing_circle"
+    },
+    {
+        "project": "caesar_cipher",
+        "start_date": "11/30/2025",
+        "end_date": "11/30/2025",
+        "url": "https://github.com/DeveloperJarvis/caesar_cipher"
+    },
+    {
+        "project": "cmd_todo",
+        "start_date": "11/20/2025",
+        "end_date": "11/21/2025",
+        "url": "https://github.com/DeveloperJarvis/cmd_todo"
+    },
+    {
+        "project": "digital_clock",
+        "start_date": "11/21/2025",
+        "end_date": "11/22/2025",
+        "url": "https://github.com/DeveloperJarvis/digital_clock"
+    },
+    {
+        "project": "dns",
+        "start_date": "11/17/2025",
+        "end_date": "11/17/2025",
+        "url": "https://github.com/DeveloperJarvis/dns"
+    },
+    {
+        "project": "fct",
+        "start_date": "11/22/2025",
+        "end_date": "11/24/2025",
+        "url": "https://github.com/DeveloperJarvis/fct"
+    },
+    {
+        "project": "file_diff",
+        "start_date": "11/23/2025",
+        "end_date": "11/24/2025",
+        "url": "https://github.com/DeveloperJarvis/file_diff"
+    },
+    {
+        "project": "hide_in_clear_text",
+        "start_date": "11/13/2025",
+        "end_date": "11/14/2025",
+        "url": "https://github.com/DeveloperJarvis/hide_in_clear_text"
+    },
+    {
+        "project": "my_cat",
+        "start_date": "11/16/2025",
+        "end_date": "11/17/2025",
+        "url": "https://github.com/DeveloperJarvis/my_cat"
+    },
+    {
+        "project": "my_echo",
+        "start_date": "11/15/2025",
+        "end_date": "11/21/2025",
+        "url": "https://github.com/DeveloperJarvis/my_echo"
+    },
+    {
+        "project": "number_guessing_game",
+        "start_date": "11/26/2025",
+        "end_date": "11/26/2025",
+        "url": "https://github.com/DeveloperJarvis/number_guessing_game"
+    },
+    {
+        "project": "one_time_pad",
+        "start_date": "11/14/2025",
+        "end_date": "11/14/2025",
+        "url": "https://github.com/DeveloperJarvis/one_time_pad"
+    },
+    {
+        "project": "password_validator",
+        "start_date": "11/24/2025",
+        "end_date": "11/24/2025",
+        "url": "https://github.com/DeveloperJarvis/password_validator"
+    },
+    {
+        "project": "rock_paper_scissors",
+        "start_date": "11/29/2025",
+        "end_date": "11/29/2025",
+        "url": "https://github.com/DeveloperJarvis/rock_paper_scissors"
+    },
+    {
+        "project": "string_extractor",
+        "start_date": "11/12/2025",
+        "end_date": "11/14/2025",
+        "url": "https://github.com/DeveloperJarvis/string_extractor"
+    },
+    {
+        "project": "temperature_converter",
+        "start_date": "11/25/2025",
+        "end_date": "11/25/2025",
+        "url": "https://github.com/DeveloperJarvis/temperature_converter"
+    },
+    {
+        "project": "text_analyzer",
+        "start_date": "11/27/2025",
+        "end_date": "11/27/2025",
+        "url": "https://github.com/DeveloperJarvis/text_analyzer"
+    },
+    {
+        "project": "tic_tac_toe",
+        "start_date": "11/28/2025",
+        "end_date": "11/28/2025",
+        "url": "https://github.com/DeveloperJarvis/tic_tac_toe"
+    }
+]
